@@ -7,13 +7,14 @@
 //
 
 #import "iPhoneAppDelegate.h"
-#import "ProjectViewController.h"
+
 
 
 @implementation iPhoneAppDelegate
 
 @synthesize window;
 @synthesize navigationController;
+@synthesize filterView;
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
@@ -29,9 +30,12 @@
 		splashvc.delegate = self;
 		[window addSubview:[splashvc view]];
 	} else {
+		//we call doFilterDone to make the first screen the project screen. (but only if we're run before. otherwise we go to the filter screen.)
+		[filterView doFilterDone:self];
 		[self loadNavigationView];
 	}
-		[window makeKeyAndVisible];
+	
+	[window makeKeyAndVisible];
 	
 }
 
@@ -43,6 +47,7 @@
 -(void) loadNavigationView
 {
 	[[splashvc view] removeFromSuperview];
+	
 	// Configure and show the window
 	[window addSubview:[navigationController view]];
 	[window setNeedsDisplay];	

@@ -12,9 +12,17 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
-		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
+		2899E5600DE3E45000AC0155 /* ProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* ProjectViewController.xib */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* ProjectViewController.m */; };
+		E10AF6DD0EABE26A00098BE4 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10AF6DC0EABE26A00098BE4 /* FilterViewController.m */; };
+		E10AF6E00EABE29200098BE4 /* ProjectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10AF6DF0EABE29200098BE4 /* ProjectDetailViewController.m */; };
+		E10AF6E30EABEFFE00098BE4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10AF6E20EABEFFE00098BE4 /* SettingsViewController.m */; };
+		E10AF6E60EABF07E00098BE4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10AF6E50EABF07E00098BE4 /* AboutViewController.m */; };
+		E10AF6E80EABF11200098BE4 /* FilterViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = E10AF6E70EABF11200098BE4 /* FilterViewController.xib */; };
+		E10AF6FC0EABF29100098BE4 /* ProjectDetailViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = E10AF6FB0EABF29100098BE4 /* ProjectDetailViewController.xib */; };
+		E10AF7050EAC23D900098BE4 /* SettingsViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = E10AF7040EAC23D900098BE4 /* SettingsViewController.xib */; };
+		E10AF7070EAC243300098BE4 /* AboutViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = E10AF7060EAC243300098BE4 /* AboutViewController.xib */; };
 		E1DDD40F0EAAD73F006CA155 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DDD40E0EAAD73F006CA155 /* SplashViewController.m */; };
 		E1DDD4110EAAD74E006CA155 /* SplashView.xib in Sources */ = {isa = PBXBuildFile; fileRef = E1DDD4100EAAD74E006CA155 /* SplashView.xib */; };
 /* End PBXBuildFile section */
@@ -26,13 +34,25 @@
 		1D6058910D05DD3D006BFB54 /* iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E55F0DE3E45000AC0155 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		2899E55F0DE3E45000AC0155 /* ProjectViewController.xib */ = {isa = PBXFileReference; explicitFileType = file.xib; path = ProjectViewController.xib; sourceTree = "<group>"; };
 		28A0AAE50D9B0CCF005BE974 /* iPhone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* ProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10AF6DB0EABE26A00098BE4 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		E10AF6DC0EABE26A00098BE4 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		E10AF6DE0EABE29200098BE4 /* ProjectDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDetailViewController.h; sourceTree = "<group>"; };
+		E10AF6DF0EABE29200098BE4 /* ProjectDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDetailViewController.m; sourceTree = "<group>"; };
+		E10AF6E10EABEFFE00098BE4 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		E10AF6E20EABEFFE00098BE4 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		E10AF6E40EABF07E00098BE4 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		E10AF6E50EABF07E00098BE4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		E10AF6E70EABF11200098BE4 /* FilterViewController.xib */ = {isa = PBXFileReference; explicitFileType = file.xib; fileEncoding = 4; path = FilterViewController.xib; sourceTree = "<group>"; };
+		E10AF6FB0EABF29100098BE4 /* ProjectDetailViewController.xib */ = {isa = PBXFileReference; explicitFileType = file.xib; fileEncoding = 4; path = ProjectDetailViewController.xib; sourceTree = "<group>"; };
+		E10AF7040EAC23D900098BE4 /* SettingsViewController.xib */ = {isa = PBXFileReference; explicitFileType = file.xib; fileEncoding = 4; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		E10AF7060EAC243300098BE4 /* AboutViewController.xib */ = {isa = PBXFileReference; explicitFileType = file.xib; fileEncoding = 4; path = AboutViewController.xib; sourceTree = "<group>"; };
 		E1DDD40D0EAAD73F006CA155 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		E1DDD40E0EAAD73F006CA155 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		E1DDD4100EAAD74E006CA155 /* SplashView.xib */ = {isa = PBXFileReference; explicitFileType = file.xib; fileEncoding = 4; path = SplashView.xib; sourceTree = "<group>"; };
@@ -59,6 +79,14 @@
 				E1DDD40E0EAAD73F006CA155 /* SplashViewController.m */,
 				28C286DF0D94DF7D0034E888 /* ProjectViewController.h */,
 				28C286E00D94DF7D0034E888 /* ProjectViewController.m */,
+				E10AF6DB0EABE26A00098BE4 /* FilterViewController.h */,
+				E10AF6DC0EABE26A00098BE4 /* FilterViewController.m */,
+				E10AF6DE0EABE29200098BE4 /* ProjectDetailViewController.h */,
+				E10AF6DF0EABE29200098BE4 /* ProjectDetailViewController.m */,
+				E10AF6E10EABEFFE00098BE4 /* SettingsViewController.h */,
+				E10AF6E20EABEFFE00098BE4 /* SettingsViewController.m */,
+				E10AF6E40EABF07E00098BE4 /* AboutViewController.h */,
+				E10AF6E50EABF07E00098BE4 /* AboutViewController.m */,
 				1D3623240D0F684500981E51 /* iPhoneAppDelegate.h */,
 				1D3623250D0F684500981E51 /* iPhoneAppDelegate.m */,
 			);
@@ -98,7 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				E1DDD4100EAAD74E006CA155 /* SplashView.xib */,
-				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
+				2899E55F0DE3E45000AC0155 /* ProjectViewController.xib */,
+				E10AF6E70EABF11200098BE4 /* FilterViewController.xib */,
+				E10AF6FB0EABF29100098BE4 /* ProjectDetailViewController.xib */,
+				E10AF7040EAC23D900098BE4 /* SettingsViewController.xib */,
+				E10AF7060EAC243300098BE4 /* AboutViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
@@ -165,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
-				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
+				2899E5600DE3E45000AC0155 /* ProjectViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +213,14 @@
 				28C286E10D94DF7D0034E888 /* ProjectViewController.m in Sources */,
 				E1DDD40F0EAAD73F006CA155 /* SplashViewController.m in Sources */,
 				E1DDD4110EAAD74E006CA155 /* SplashView.xib in Sources */,
+				E10AF6DD0EABE26A00098BE4 /* FilterViewController.m in Sources */,
+				E10AF6E00EABE29200098BE4 /* ProjectDetailViewController.m in Sources */,
+				E10AF6E30EABEFFE00098BE4 /* SettingsViewController.m in Sources */,
+				E10AF6E60EABF07E00098BE4 /* AboutViewController.m in Sources */,
+				E10AF6E80EABF11200098BE4 /* FilterViewController.xib in Sources */,
+				E10AF6FC0EABF29100098BE4 /* ProjectDetailViewController.xib in Sources */,
+				E10AF7050EAC23D900098BE4 /* SettingsViewController.xib in Sources */,
+				E10AF7070EAC243300098BE4 /* AboutViewController.xib in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

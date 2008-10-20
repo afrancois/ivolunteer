@@ -1,5 +1,5 @@
 //
-//  RootViewController.m
+//  ProjectViewController.m
 //  iPhone
 //
 //  Created by Dave Angulo on 10/18/08.
@@ -8,9 +8,12 @@
 
 #import "ProjectViewController.h"
 #import "iPhoneAppDelegate.h"
-
+#import "ProjectDetailViewController.h"
 
 @implementation ProjectViewController
+
+@synthesize filterButton;
+@synthesize settingsButton;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -39,16 +42,21 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic -- create and push a new view controller
+	ProjectDetailViewController* _projectDetailView = [[ProjectDetailViewController alloc] initWithNibName:@"ProjectDetailViewController" bundle:[NSBundle mainBundle]];
+	[self.navigationController pushViewController:_projectDetailView animated:YES];
+	[_projectDetailView release];
 }
 
 
-/*
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Uncomment the following line to add the Edit button to the navigation bar.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	//create a filter button.
+	self.navigationItem.rightBarButtonItem = self.settingsButton;
 }
-*/
+
 
 
 /*
@@ -125,6 +133,14 @@
     [super dealloc];
 }
 
+- (IBAction)doFilter:(id)sender
+{
+	NSLog(@"filter...");
+}
+- (IBAction)doSettings:(id)sender
+{
+	NSLog(@"settings...");
+}
 
 @end
 

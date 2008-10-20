@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ProjectViewController : UITableViewController {
+	UIBarButtonItem *filterButton;
+	UIBarButtonItem *settingsButton;
 }
+
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *filterButton;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *settingsButton;
+
+- (IBAction)doFilter:(id)sender;
+- (IBAction)doSettings:(id)sender;
 
 @end
