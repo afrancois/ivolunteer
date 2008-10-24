@@ -11,6 +11,8 @@
 
 @implementation SplashViewController
 @synthesize delegate;
+@synthesize title;
+@synthesize button;
 
 /*
 // Override initWithNibName:bundle: to load the view using a nib file then perform additional customization that is not appropriate for viewDidLoad.
@@ -28,13 +30,24 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[UIView beginAnimations:@"slideup" context:self];
+	[UIView setAnimationDuration:0.5];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationDidStopSelector:@selector(animationDone:finished:context:)];
+	CGRect target = CGRectMake(self.title.frame.origin.x,10,self.title.frame.size.width,self.title.frame.size.height);
+	self.title.frame = target;
+	[UIView commitAnimations];
 }
-*/
 
+
+-(void)animationDone:(NSString*)animId finished:(NSNumber*)completed context:(void*)context
+{
+	self.button.hidden = false;
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations

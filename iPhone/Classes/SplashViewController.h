@@ -11,10 +11,14 @@
 
 @interface SplashViewController : UIViewController {
 	id delegate;
+	UIView* title;
+	UIButton* button;
 }
 
 @property (nonatomic,retain) id delegate;
+@property (nonatomic,retain) IBOutlet UIView* title;
+@property (nonatomic,retain) IBOutlet UIButton* button;
 
 - (IBAction)splashOk:(id)sender forEvent:(UIEvent*)event;
-
+-(void)animationDone:(NSString*)animId finished:(NSNumber *)completed context:(void*)context;
 @end
